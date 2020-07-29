@@ -14,12 +14,12 @@
     <span style="color:red">p</span>
 </h1>
 <ul *ngIf="home">
-    <li><a class="active" (click)="homeTab()">Home</a></li>
-    <li><a (click)="castTab()">Cast</a></li>
+    <li><button class="active" (click)="homeTab()">Home</button></li>
+    <li><button (click)="castTab()">Cast</button></li>
 </ul>
 <ul *ngIf="home === false">
-    <li><a (click)="homeTab()">Home</a></li>
-    <li><a class="active" (click)="castTab()">Cast</a></li>
+    <li><button (click)="homeTab()">Home</button></li>
+    <li><button class="active" (click)="castTab()">Cast</button></li>
 </ul>
 <hr>
 <br>
