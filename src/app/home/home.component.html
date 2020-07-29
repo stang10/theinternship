@@ -13,11 +13,16 @@
     <span style="color:green">i</span>
     <span style="color:red">p</span>
 </h1>
-<ul>
-    <li><a class="active" href="home">Home</a></li>
-    <li><a href="cast">Cast</a></li>
+<ul *ngIf="home">
+    <li><a class="active" (click)="homeTab()">Home</a></li>
+    <li><a (click)="castTab()">Cast</a></li>
+</ul>
+<ul *ngIf="home === false">
+    <li><a (click)="homeTab()">Home</a></li>
+    <li><a class="active" (click)="castTab()">Cast</a></li>
 </ul>
 <hr>
 <br>
 <img src="https://raw.githubusercontent.com/stang10/theinternship/master/docs/assets/TheInternshipMoviePosterFromMalaysia.jpg" 
-    alt="A Poster from the movie The Internship that has the cast standing in front of the Google office building.">
+    alt="A Poster from the movie The Internship that has the cast standing in front of the Google office building."
+    *ngIf="home">
