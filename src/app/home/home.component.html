@@ -16,10 +16,17 @@
 <ul *ngIf="page == 'home'">
     <li><button class="active" (click)="homeTab()">Home</button></li>
     <li><button (click)="castTab()">Cast</button></li>
+    <li><button (click)="bibTab()">Sources</button></li>
 </ul>
 <ul *ngIf="page == 'cast'">
     <li><button (click)="homeTab()">Home</button></li>
     <li><button class="active" (click)="castTab()">Cast</button></li>
+    <li><button (click)="bibTab()">Sources</button></li>
+</ul>
+<ul *ngIf="page == 'bib'">
+    <li><button (click)="homeTab()">Home</button></li>
+    <li><button (click)="castTab()">Cast</button></li>
+    <li><button class="active" (click)="bibTab()">Sources</button></li>
 </ul>
 <hr>
 <br>
@@ -143,4 +150,24 @@
             </td>
         </tr>
     </table>
+</div>
+<div role="group" aria-label="Page Information To Display When Sources is Selected" *ngIf="page == 'bib'">
+    <h2>Websites Used For Information</h2>
+    <ul style="text-align: center;font-family: 'Alata';font-size: 18px;">
+        <li style="float: none;"><a href="https://en.wikipedia.org/wiki/The_Internship" target="_blank">The Internship Wikipedia</a></li>
+        <li style="float: none;"><a href="https://www.imdb.com/title/tt2234155/" target="_blank">The Internship IMDB</a></li>
+    </ul>
+    <h2>Websites Used For Images</h2>
+    <ul style="text-align: center;font-family: 'Alata';font-size: 18px;">
+        <li style="float: none;"><a href="https://www.entrepreneur.com/article/226948" target="_blank">Front Page Photo</a></li>
+        <li style="float: none;"><a href="https://www.allmovie.com/artist/vince-vaughn-p225542/awards" target="_blank">Vince Vaughn Headshot</a></li>
+        <li style="float: none;"><a href="https://disney.fandom.com/wiki/Owen_Wilson" target="_blank">Owen Wilson Headshot</a></li>
+        <li style="float: none;"><a href="https://www.fanpop.com/clubs/dylan-obrien/images/38660896/title/dylan-obrien-photo" target="_blank">Dylan O'Brien Headshot</a></li>
+        <li style="float: none;"><a href="https://ethnicelebs.com/tiya-sircar" target="_blank">Tiya Sircar Headshot</a></li>
+        <li style="float: none;"><a href="https://www.imdb.com/name/nm5111695/" target="_blank">Tobit Raphael Headshot</a></li>
+        <li style="float: none;"><a href="https://deadline.com/2017/01/max-minghella-la-la-land-teen-spirit-mister-smith-entertainment-fred-berger-the-social-network-1201897415/" target="_blank">Max Minghella Headshot</a></li>
+        <li style="float: none;"><a href="https://www.pinterest.ch/pin/311311392969662032/" target="_blank">Josh Brener Headshot</a></li>
+        <li style="float: none;"><a href="https://www.hollywoodreporter.com/news/rose-byrne-make-broadway-debut-714651" target="_blank">Rose Byrne Headshot</a></li>
+        <li style="float: none;"><a href="https://cbs-evil.fandom.com/wiki/Aasif_Mandvi" target="_blank">Aasif Mandvi Headshot</a></li>
+    </ul>
 </div>

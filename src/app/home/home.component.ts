@@ -21,4 +21,8 @@ export class HomeComponent implements OnInit {
   castTab() {
     this.page = "cast";
   }
+
+  bibTab(){
+    this.page = "bib"
+  }
 }
