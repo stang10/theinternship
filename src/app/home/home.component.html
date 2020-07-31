@@ -15,73 +15,99 @@
 </h1>
 <ul *ngIf="page == 'home'">
     <li><button class="active" (click)="homeTab()">Home</button></li>
-    <li><button (click)="castTab()">Cast</button></li>
+    <li><button (click)="quotesTab()">Quotes</button></li>
     <li><button (click)="bibTab()">Sources</button></li>
 </ul>
-<ul *ngIf="page == 'cast'">
+<ul *ngIf="page == 'quotes'">
     <li><button (click)="homeTab()">Home</button></li>
-    <li><button class="active" (click)="castTab()">Cast</button></li>
+    <li><button class="active" (click)="quotesTab()">Quotes</button></li>
     <li><button (click)="bibTab()">Sources</button></li>
 </ul>
 <ul *ngIf="page == 'bib'">
     <li><button (click)="homeTab()">Home</button></li>
-    <li><button (click)="castTab()">Cast</button></li>
+    <li><button (click)="quotesTab()">Quotes</button></li>
     <li><button class="active" (click)="bibTab()">Sources</button></li>
 </ul>
 <hr>
 <br>
 <div role="group" aria-label="Page Information To Display When Home is Selected" *ngIf="page == 'home'">
-<img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/TheInternship.jpg"
-    alt="A Poster from the movie The Internship that has the cast standing in front of the Google office building."
-    width="50%">
-
-<p >The Internship follows Billy McMahon <span style="color:blue;text-shadow: 0.5px 0.5px 0.5px #000000">(Vince Vaughn)</span> 
-    and Nick Campbell <span style="color:red;text-shadow: 0.5px 0.5px 0.5px #000000">(Owen Wilson)</span>, middle aged men feeling 
-    outdated in the world around them. After being laid off, they seek out work in other fields. One unconventional 
-    technical interview and a little help from some sympathetic judges later, these men embark on their journey as 
-    "Nooglers" otherwise known as Google Interns.
-</p>
-<p>
-    They spend the summer competing in teams against other interns in a variety of tasks in order to win guaranteed 
-    jobs with Google. Billy and Nick are teamed with other interns seen as rejects: Stuart 
-    <span style="color:green;text-shadow: 0.5px 0.5px 0.5px #000000">(Dylan O’Brien)</span>, who is 
-    incredibly sarcastic and attached to his smartphone; Yo-Yo <span style="color:blue;text-shadow: 0.5px 0.5px 0.5px #000000">(Tobit Raphael)</span>, 
-    who was home-schooled by his controlling mother; and Neha <span style="color:red;text-shadow: 0.5px 0.5px 0.5px #000000">(Tira Sircar)</span>, 
-    an enthusiastic but quirky lover of nerd culture. The team leader Lyle <span style="color:rgb(255, 191, 0);text-shadow: 0.5px 0.5px 0.5px #000000">(Josh Brener)</span> 
-    constantly tries to act hip to hide his insecurities. Another intern, Ivy-League graduate Graham 
-    <span style="color:blue;text-shadow: 0.5px 0.5px 0.5px #000000">(Max Minghella)</span>, 
-    bullies Billy and Nick's team. Roger Chetty <span style="color:green;text-shadow: 0.5px 0.5px 0.5px #000000">(Aasif Mandvi)</span>, 
-    the head of the internship program, also expresses his 
-    doubts about the older men's abilities. Stuart, Yo-Yo, and Neha see Billy and Nick as useless during a task focused 
-    on debugging and send them on a wild-goose chase for the fictional Charles Xavier at Stanford University. But later, 
-    during a game of quidditch against Graham's team, Billy rallies his team to a comeback that unifies them as a team, 
-    despite ultimately losing after Graham cheats.
-</p>
-<p>
-    When the teams are tasked with developing an app, Billy and Nick convince the team to indulge in a wild night out at 
-    a strip club. Each of the characters grow closer together and reach far outside of their comfort zones.  At the end 
-    of the night, Lyle's drunken antics inspire the team to create an app that guards against reckless phone usage while 
-    drunk. They win the task by earning the most downloads. The movie then follows as Nick and Billy stumble onto a love 
-    of the programming material they learn throughout the summer, risk their team’s chance at jobs, and ultimately earn 
-    spots as members of the Google Workforce. Nick even manages to land a date with Dana <span style="color:red;text-shadow: 0.5px 0.5px 0.5px #000000">(Rose Byrne)</span>,
-    a high level Google employee and the woman of his dreams.
-</p>
+    <img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/TheInternship.jpg"
+        alt="A Poster from the movie The Internship that has the cast standing in front of the Google office building."
+        width="50%">
+    <h2>My Two Cents</h2>
+    <p><i>The Internship</i> is a feel good movie built for people in the field of technology. When I first saw 
+    this movie, I had only just taken an interest in  Computer Science. I was still learning what I could even be 
+    capable of. My family and I had stumbled on this movie because we love comedies and were fans of the actors. But,
+    it is now one of my all-time favorite movies. It made me excited for the career and lifestyle I was choosing. Plus,
+    I got a peak at what kind of goofs I could be working with in the future. Check out the summary below for more on
+    the movie or click on the <span style="color:rgb(255, 191, 0);text-shadow: 0.5px 0.5px 0.5px #000000">"Quotes"</span> 
+    tab to see my favorite quotes from each character.
+    </p>
+    <h2>Summary</h2>
+    <p><i>The Internship</i> follows Billy McMahon <span style="color:blue;text-shadow: 0.5px 0.5px 0.5px #000000">(Vince
+            Vaughn)</span>
+        and Nick Campbell <span style="color:red;text-shadow: 0.5px 0.5px 0.5px #000000">(Owen Wilson)</span>, middle
+        aged men feeling
+        outdated in the world around them. After being laid off, they seek out work in other fields. One unconventional
+        technical interview and a little help from some sympathetic judges later, these men embark on their journey as
+        "Nooglers" otherwise known as Google Interns.
+    </p>
+    <p>
+        They spend the summer competing in teams against other interns in a variety of tasks in order to win guaranteed
+        jobs with Google. Billy and Nick are teamed with other interns seen as rejects: Stuart
+        <span style="color:green;text-shadow: 0.5px 0.5px 0.5px #000000">(Dylan O’Brien)</span>, who is
+        incredibly sarcastic and attached to his smartphone; Yo-Yo <span
+            style="color:blue;text-shadow: 0.5px 0.5px 0.5px #000000">(Tobit Raphael)</span>,
+        who was home-schooled by his controlling mother; and Neha <span
+            style="color:red;text-shadow: 0.5px 0.5px 0.5px #000000">(Tira Sircar)</span>,
+        an enthusiastic but quirky lover of nerd culture. The team leader Lyle <span
+            style="color:rgb(255, 191, 0);text-shadow: 0.5px 0.5px 0.5px #000000">(Josh Brener)</span>
+        constantly tries to act hip to hide his insecurities. Another intern, Ivy-League graduate Graham
+        <span style="color:blue;text-shadow: 0.5px 0.5px 0.5px #000000">(Max Minghella)</span>,
+        bullies Billy and Nick's team. Roger Chetty <span
+            style="color:green;text-shadow: 0.5px 0.5px 0.5px #000000">(Aasif Mandvi)</span>,
+        the head of the internship program, also expresses his
+        doubts about the older men's abilities. Stuart, Yo-Yo, and Neha see Billy and Nick as useless during a task
+        focused
+        on debugging and send them on a wild-goose chase for the fictional Charles Xavier at Stanford University. But
+        later,
+        during a game of quidditch against Graham's team, Billy rallies his team to a comeback that unifies them as a
+        team,
+        despite ultimately losing after Graham cheats.
+    </p>
+    <p>
+        When the teams are tasked with developing an app, Billy and Nick convince the team to indulge in a wild night
+        out at
+        a strip club. Each of the characters grow closer together and reach far outside of their comfort zones. At the
+        end
+        of the night, Lyle's drunken antics inspire the team to create an app that guards against reckless phone usage
+        while
+        drunk. They win the task by earning the most downloads. The movie then follows as Nick and Billy stumble onto a
+        love
+        of the programming material they learn throughout the summer, risk their team’s chance at jobs, and ultimately
+        earn
+        spots as members of the Google Workforce. Nick even manages to land a date with Dana <span
+            style="color:red;text-shadow: 0.5px 0.5px 0.5px #000000">(Rose Byrne)</span>,
+        a high level Google employee and the woman of his dreams.
+    </p>
 </div>
-<div role="group" aria-label="Page Information To Display When Cast is Selected" *ngIf="page == 'cast'">
+<div role="group" aria-label="Page Information To Display When Cast is Selected" *ngIf="page == 'quotes'">
     <h2>Meet the Nooglers</h2>
     <table style="width:100%">
         <tr>
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/VinceVaughn.jpg"
                     alt="A headshot of Vince Vaughn"></td>
             <td width="75%" style="text-align:center">
-                <b>Vince Vaughn (aka Billy McMahon)</b><br>"Here's the deal. I'm pretty terrific on the phones. I could sell prosciutto to a rabbi. And I have."
+                <b>Vince Vaughn as <span style="color:red;text-shadow: 0.5px 0.5px 0.5px #000000">Billy McMahon</span></b><br>"Here's the deal. I'm pretty terrific on the phones. I could
+                sell prosciutto to a rabbi. And I have."
             </td>
         </tr>
     </table>
     <table style="width:100%">
         <tr>
             <td width="75%" style="text-align:center">
-                <b>Owen Wilson (aka Nick Campbell)</b><br>"People have a deep distrust of machines. Have you seen Terminator? Or 2? Or 3? Or 4?"
+                <b>Owen Wilson as <span style="color:green;text-shadow: 0.5px 0.5px 0.5px #000000">Nick Campbell</span></b><br>"People have a deep distrust of machines. Have you seen
+                Terminator? Or 2? Or 3? Or 4?"
             </td>
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/Owen_Wilson.jpg"
                     alt="A headshot of Owen Wilson"></td>
@@ -92,15 +118,17 @@
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/DylanObrien.jpg"
                     alt="A headshot of Dylan O'Brien"></td>
             <td width="75%" style="text-align:center">
-                <b>Dylan O'Brien (aka Stuart Twombly)</b><br><em>Billy:</em> "Whoa, guys, where's all this hostility coming from?"<br>
-                <em>Stuart:</em> "Where do you think it's coming from, you big tree. Two fifths of our team is made up of two old guys..."
+                <b>Dylan O'Brien as <span style="color:blue;text-shadow: 0.5px 0.5px 0.5px #000000">Stuart Twombly</span></b><br><em>Billy:</em> "Whoa, guys, where's all this hostility
+                coming from?"<br>
+                <em>Stuart:</em> "Where do you think it's coming from, you big tree. Two fifths of our team is made up
+                of two old guys..."
             </td>
         </tr>
     </table>
     <table style="width:100%">
         <tr>
             <td width="75%" style="text-align:center">
-                <b>Tiya Sircar (aka Neha Patel)</b><br>"These guys won't understand. Use your muggle words."
+                <b>Tiya Sircar as <span style="color:red;text-shadow: 0.5px 0.5px 0.5px #000000">Neha Patel</span></b><br>"These guys won't understand. Use your muggle words."
             </td>
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/tiyasircar.jpg"
                     alt="A headshot of Tiya Sircar"></td>
@@ -111,14 +139,15 @@
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/tobitRaphael.jpg"
                     alt="A headshot of Tobit Raphael"></td>
             <td width="75%" style="text-align:center">
-                <b>Tobit Raphael (aka Yo-Yo Santos)</b><br>"My mother hits harder than you!"
+                <b>Tobit Raphael as <span style="color:rgb(255, 191, 0);text-shadow: 0.5px 0.5px 0.5px #000000">Yo-Yo Santos</span></b><br>"My mother hits harder than you!"
             </td>
         </tr>
     </table>
     <table style="width:100%">
         <tr>
             <td width="75%" style="text-align:center">
-                <b>Max Minghella (aka Graham Hawtrey)</b><br>"Well, I hope you're all happy! What were you thinking? Maybe if I had a team of individuals who contributed once in a while, this never would've happened."
+                <b>Max Minghella <span style="color:blue;text-shadow: 0.5px 0.5px 0.5px #000000">Graham Hawtrey</span></b><br>"Well, I hope you're all happy! What were you thinking?
+                Maybe if I had a team of individuals who contributed once in a while, this never would've happened."
             </td>
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/MaxMinghella.jpg"
                     alt="A headshot of Max Minghella"></td>
@@ -130,16 +159,18 @@
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/JoshBrener.jpg"
                     alt="A headshot of Josh Brener"></td>
             <td width="75%" style="text-align:center">
-                <b>Josh Brener (aka Lyle Spaulding)</b><br>"Guys, we're looking for a bug, not a password. They're different things."
+                <b>Josh Brener as <span style="color:green;text-shadow: 0.5px 0.5px 0.5px #000000">Lyle Spaulding</span></b><br>"Guys, we're looking for a bug, not a password. They're
+                different things."
             </td>
         </tr>
     </table>
     <table style="width:100%">
         <tr>
             <td width="75%" style="text-align:center">
-                <b>Rose Byrne (aka Dana Simms)</b><br><em>Dana:</em> "You know, I didn't expect that I would like you."<br>
+                <b>Rose Byrne as <span style="color:red;text-shadow: 0.5px 0.5px 0.5px #000000">Dana Simms</span></b><br><em>Dana:</em> "You know, I didn't expect that I would like
+                you."<br>
                 <em>Nick:</em> "I didn't think you'd like me, either."
-            
+
             </td>
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/rose_byrne.jpg"
                     alt="A headshot of Rose Byrne"></td>
@@ -150,7 +181,9 @@
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/Aasif_Mandvi.jpg"
                     alt="A headshot of Aasif Mandvi"></td>
             <td width="75%" style="text-align:center">
-                <b>Aasif Mandvi (aka Roger Chetty)</b><br>"While internally dogfooding a new product, a number of Googlers reported a bug that disabled their audio. All two million lines of that code are in the source files. Your job: find the bug."
+                <b>Aasif Mandvi as <span style="color:rgb(255, 191, 0);text-shadow: 0.5px 0.5px 0.5px #000000">Roger Chetty</span></b><br>"While internally dogfooding a new product, a number of
+                Googlers reported a bug that disabled their audio. All two million lines of that code are in the source
+                files. Your job: find the bug."
             </td>
         </tr>
     </table>
@@ -158,20 +191,34 @@
 <div role="group" aria-label="Page Information To Display When Sources is Selected" *ngIf="page == 'bib'">
     <h2>Websites Used For Information</h2>
     <ul style="text-align: center;font-family: 'Alata';font-size: 18px;">
-        <li style="float: none;"><a href="https://en.wikipedia.org/wiki/The_Internship" target="_blank">The Internship Wikipedia</a></li>
-        <li style="float: none;"><a href="https://www.imdb.com/title/tt2234155/" target="_blank">The Internship IMDB</a></li>
+        <li style="float: none;"><a href="https://en.wikipedia.org/wiki/The_Internship" target="_blank">The Internship
+                Wikipedia</a></li>
+        <li style="float: none;"><a href="https://www.imdb.com/title/tt2234155/" target="_blank">The Internship IMDB</a>
+        </li>
     </ul>
     <h2>Websites Used For Images</h2>
     <ul style="text-align: center;font-family: 'Alata';font-size: 18px;">
-        <li style="float: none;"><a href="https://www.entrepreneur.com/article/226948" target="_blank">Front Page Photo</a></li>
-        <li style="float: none;"><a href="https://www.allmovie.com/artist/vince-vaughn-p225542/awards" target="_blank">Vince Vaughn Headshot</a></li>
-        <li style="float: none;"><a href="https://disney.fandom.com/wiki/Owen_Wilson" target="_blank">Owen Wilson Headshot</a></li>
-        <li style="float: none;"><a href="https://www.fanpop.com/clubs/dylan-obrien/images/38660896/title/dylan-obrien-photo" target="_blank">Dylan O'Brien Headshot</a></li>
-        <li style="float: none;"><a href="https://ethnicelebs.com/tiya-sircar" target="_blank">Tiya Sircar Headshot</a></li>
-        <li style="float: none;"><a href="https://www.imdb.com/name/nm5111695/" target="_blank">Tobit Raphael Headshot</a></li>
-        <li style="float: none;"><a href="https://deadline.com/2017/01/max-minghella-la-la-land-teen-spirit-mister-smith-entertainment-fred-berger-the-social-network-1201897415/" target="_blank">Max Minghella Headshot</a></li>
-        <li style="float: none;"><a href="https://www.pinterest.ch/pin/311311392969662032/" target="_blank">Josh Brener Headshot</a></li>
-        <li style="float: none;"><a href="https://www.hollywoodreporter.com/news/rose-byrne-make-broadway-debut-714651" target="_blank">Rose Byrne Headshot</a></li>
-        <li style="float: none;"><a href="https://cbs-evil.fandom.com/wiki/Aasif_Mandvi" target="_blank">Aasif Mandvi Headshot</a></li>
+        <li style="float: none;"><a href="https://www.entrepreneur.com/article/226948" target="_blank">Front Page
+                Photo</a></li>
+        <li style="float: none;"><a href="https://www.allmovie.com/artist/vince-vaughn-p225542/awards"
+                target="_blank">Vince Vaughn Headshot</a></li>
+        <li style="float: none;"><a href="https://disney.fandom.com/wiki/Owen_Wilson" target="_blank">Owen Wilson
+                Headshot</a></li>
+        <li style="float: none;"><a
+                href="https://www.fanpop.com/clubs/dylan-obrien/images/38660896/title/dylan-obrien-photo"
+                target="_blank">Dylan O'Brien Headshot</a></li>
+        <li style="float: none;"><a href="https://ethnicelebs.com/tiya-sircar" target="_blank">Tiya Sircar Headshot</a>
+        </li>
+        <li style="float: none;"><a href="https://www.imdb.com/name/nm5111695/" target="_blank">Tobit Raphael
+                Headshot</a></li>
+        <li style="float: none;"><a
+                href="https://deadline.com/2017/01/max-minghella-la-la-land-teen-spirit-mister-smith-entertainment-fred-berger-the-social-network-1201897415/"
+                target="_blank">Max Minghella Headshot</a></li>
+        <li style="float: none;"><a href="https://www.pinterest.ch/pin/311311392969662032/" target="_blank">Josh Brener
+                Headshot</a></li>
+        <li style="float: none;"><a href="https://www.hollywoodreporter.com/news/rose-byrne-make-broadway-debut-714651"
+                target="_blank">Rose Byrne Headshot</a></li>
+        <li style="float: none;"><a href="https://cbs-evil.fandom.com/wiki/Aasif_Mandvi" target="_blank">Aasif Mandvi
+                Headshot</a></li>
     </ul>
 </div>

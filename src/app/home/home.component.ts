@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
     this.page = "home";
   }
 
-  castTab() {
-    this.page = "cast";
+  quotesTab() {
+    this.page = "quotes";
   }
 
   bibTab(){
