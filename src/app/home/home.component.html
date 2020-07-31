@@ -13,41 +13,67 @@
     <span style="color:green">i</span>
     <span style="color:red">p</span>
 </h1>
-<ul *ngIf="home">
+<ul *ngIf="page == 'home'">
     <li><button class="active" (click)="homeTab()">Home</button></li>
     <li><button (click)="castTab()">Cast</button></li>
 </ul>
-<ul *ngIf="home === false">
+<ul *ngIf="page == 'cast'">
     <li><button (click)="homeTab()">Home</button></li>
     <li><button class="active" (click)="castTab()">Cast</button></li>
 </ul>
 <hr>
 <br>
+<div role="group" aria-label="Page Information To Display When Home is Selected" *ngIf="page == 'home'">
 <img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/TheInternship.jpg"
     alt="A Poster from the movie The Internship that has the cast standing in front of the Google office building."
-    *ngIf="home" width="50%">
+    width="50%">
 
-<p *ngIf="home">The Internship was released in 2013. It stars Vince Vaughn and Owen Wilson who play middle aged men
-    feeling outdated in the world around them. After being
-    laid off, they seek out work in other fields. After an unconventional interview and a little help from some
-    sympathetic judges, these men embark on their journey
-    as "Nooglers" otherwise known as Google Interns.
+<p >The Internship follows Billy McMahon <span style="color:blue;text-shadow: 0.5px 0.5px 0.5px #000000">(Vince Vaughn)</span> 
+    and Nick Campbell <span style="color:red;text-shadow: 0.5px 0.5px 0.5px #000000">(Owen Wilson)</span>, middle aged men feeling 
+    outdated in the world around them. After being laid off, they seek out work in other fields. One unconventional 
+    technical interview and a little help from some sympathetic judges later, these men embark on their journey as 
+    "Nooglers" otherwise known as Google Interns.
 </p>
-<div *ngIf="home === false">
+<p>
+    They spend the summer competing in teams against other interns in a variety of tasks in order to win guaranteed 
+    jobs with Google. Billy and Nick are teamed with other interns seen as rejects: Stuart 
+    <span style="color:green;text-shadow: 0.5px 0.5px 0.5px #000000">(Dylan O’Brien)</span>, who is 
+    incredibly sarcastic and attached to his smartphone; Yo-Yo <span style="color:blue;text-shadow: 0.5px 0.5px 0.5px #000000">(Tobit Raphael)</span>, 
+    who was home-schooled by his controlling mother; and Neha <span style="color:red;text-shadow: 0.5px 0.5px 0.5px #000000">(Tira Sircar)</span>, 
+    an enthusiastic but quirky lover of nerd culture. The team leader Lyle <span style="color:rgb(255, 191, 0);text-shadow: 0.5px 0.5px 0.5px #000000">(Josh Brener)</span> 
+    constantly tries to act hip to hide his insecurities. Another intern, Ivy-League graduate Graham 
+    <span style="color:blue;text-shadow: 0.5px 0.5px 0.5px #000000">(Max Minghella)</span>, 
+    bullies Billy and Nick's team. Roger Chetty <span style="color:green;text-shadow: 0.5px 0.5px 0.5px #000000">(Aasif Mandvi)</span>, 
+    the head of the internship program, also expresses his 
+    doubts about the older men's abilities. Stuart, Yo-Yo, and Neha see Billy and Nick as useless during a task focused 
+    on debugging and send them on a wild-goose chase for the fictional Charles Xavier at Stanford University. But later, 
+    during a game of quidditch against Graham's team, Billy rallies his team to a comeback that unifies them as a team, 
+    despite ultimately losing after Graham cheats.
+</p>
+<p>
+    When the teams are tasked with developing an app, Billy and Nick convince the team to indulge in a wild night out at 
+    a strip club. Each of the characters grow closer together and reach far outside of their comfort zones.  At the end 
+    of the night, Lyle's drunken antics inspire the team to create an app that guards against reckless phone usage while 
+    drunk. They win the task by earning the most downloads. The movie then follows as Nick and Billy stumble onto a love 
+    of the programming material they learn throughout the summer, risk their team’s chance at jobs, and ultimately earn 
+    spots as members of the Google Workforce. 
+</p>
+</div>
+<div role="group" aria-label="Page Information To Display When Cast is Selected" *ngIf="page == 'cast'">
     <h2>Meet the Nooglers</h2>
     <table style="width:100%">
         <tr>
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/VinceVaughn.jpg"
                     alt="A headshot of Vince Vaughn"></td>
             <td width="75%" style="text-align:center">
-                <h3>Vince Vaughn</h3><br>The main character.
+                <b>Vince Vaughn</b><br>The main character.
             </td>
         </tr>
     </table>
     <table style="width:100%">
         <tr>
             <td width="75%" style="text-align:center">
-                <h3>Owen Wilson</h3><br>The main character.
+                <b>Owen Wilson</b><br>The main character.
             </td>
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/Owen_Wilson.jpg"
                     alt="A headshot of Owen Wilson"></td>
@@ -58,14 +84,14 @@
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/DylanObrien.jpg"
                     alt="A headshot of Dylan O'Brien"></td>
             <td width="75%" style="text-align:center">
-                <h3>Dylan O'Brien</h3><br>The main character.
+                <b>Dylan O'Brien</b><br>The main character.
             </td>
         </tr>
     </table>
     <table style="width:100%">
         <tr>
             <td width="75%" style="text-align:center">
-                <h3>Tiya Sircar</h3><br>The main character.
+                <b>Tiya Sircar</b><br>The main character.
             </td>
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/tiyasircar.jpg"
                     alt="A headshot of Tiya Sircar"></td>
@@ -76,14 +102,14 @@
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/tobitRaphael.jpg"
                     alt="A headshot of Tobit Raphael"></td>
             <td width="75%" style="text-align:center">
-                <h3>Tobit Raphael</h3><br>The main character.
+                <b>Tobit Raphael</b><br>The main character.
             </td>
         </tr>
     </table>
     <table style="width:100%">
         <tr>
             <td width="75%" style="text-align:center">
-                <h3>Max Minghella</h3><br>The main character.
+                <b>Max Minghella</b><br>The main character.
             </td>
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/MaxMinghella.jpg"
                     alt="A headshot of Max Minghella"></td>
@@ -95,14 +121,14 @@
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/JoshBrener.jpg"
                     alt="A headshot of Josh Brener"></td>
             <td width="75%" style="text-align:center">
-                <h3>Josh Brener</h3><br>The main character.
+                <b>Josh Brener</b><br>The main character.
             </td>
         </tr>
     </table>
     <table style="width:100%">
         <tr>
             <td width="75%" style="text-align:center">
-                <h3>Rose Byrne</h3><br>The main character.
+                <b>Rose Byrne</b><br>The main character.
             </td>
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/rose_byrne.jpg"
                     alt="A headshot of Rose Byrne"></td>
@@ -113,7 +139,7 @@
             <td><img src="https://raw.githubusercontent.com/stang10/theinternship/master/src/assets/Aasif_Mandvi.jpg"
                     alt="A headshot of Aasif Mandvi"></td>
             <td width="75%" style="text-align:center">
-                <h3>Aasif Mandvi</h3><br>The main character.
+                <b>Aasif Mandvi</b><br>The main character.
             </td>
         </tr>
     </table>

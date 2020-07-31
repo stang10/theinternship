@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  home: boolean = true
+  page: string = "home"
 
   constructor(private route: Router){}
 
@@ -15,10 +15,10 @@ export class HomeComponent implements OnInit {
   }
 
   homeTab() {
-    this.home = true;
+    this.page = "home";
   }
 
   castTab() {
-    this.home = false;
+    this.page = "cast";
   }
 }
