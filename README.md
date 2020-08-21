@@ -2,26 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
-## Development server
+## Weekly Coding Challenge From M&T Summer Engagement Journey
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The instructions for the week's challenge was as follows:
 
-## Code scaffolding
+```
+This week, instead of us bringing you another movie you are going to have a chance to bring a movie to us. Your task for this challenge is to make a single page website with HTML and CSS about anything movie related you want and host it on Github Pages. Some examples of sites you could make are: a webpage advertising a movie of your choice, a webpage about a scene or character in a movie that you like, a webpage about a faction in a movie, or anything else movie related that you want to make a webpage about.
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Our webpages were graded on the movie dedication, HTML and CSS usage, ARIA accessibility, and going above and beyond. Examples of going above and beyond included utillizing Javascript to enhance the website, utilizing an API, use of a Javascript framework such as React or Angular, use of a CSS extension language, and/or a streamlined UI.
 
-## Build
+My page utilized the Angular Javascript framework which helped control the tabs that each displayed different information with the use of ngIf and SCSS, a CSS extension language. My page was awarded the Superior Submission Award out of 9 participants.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+The page can be viewed here: [The Internship by Samantha Tang](https://stang10.github.io/theinternship/)
