@@ -7,7 +7,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 The instructions for the week's challenge was as follows:
 
 ```
-This week, instead of us bringing you another movie you are going to have a chance to bring a movie to us. Your task for this challenge is to make a single page website with HTML and CSS about anything movie related you want and host it on Github Pages. Some examples of sites you could make are: a webpage advertising a movie of your choice, a webpage about a scene or character in a movie that you like, a webpage about a faction in a movie, or anything else movie related that you want to make a webpage about.
+This week, instead of us bringing you another movie you are going 
+to have a chance to bring a movie to us. Your task for this challenge
+is to make a single page website with HTML and CSS about anything 
+movie related you want and host it on Github Pages. Some examples of 
+sites you could make are: a webpage advertising a movie of your choice,
+a webpage about a scene or character in a movie that you like, a webpage
+about a faction in a movie, or anything else movie related that you want
+to make a webpage about.
 ```
 
 Our webpages were graded on the movie dedication, HTML and CSS usage, ARIA accessibility, and going above and beyond. Examples of going above and beyond included utillizing Javascript to enhance the website, utilizing an API, use of a Javascript framework such as React or Angular, use of a CSS extension language, and/or a streamlined UI.
