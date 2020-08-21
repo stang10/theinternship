@@ -19,6 +19,6 @@ to make a webpage about.
 
 Our webpages were graded on the movie dedication, HTML and CSS usage, ARIA accessibility, and going above and beyond. Examples of going above and beyond included utillizing Javascript to enhance the website, utilizing an API, use of a Javascript framework such as React or Angular, use of a CSS extension language, and/or a streamlined UI.
 
-My page utilized the Angular Javascript framework which helped control the tabs that each displayed different information with the use of ngIf and SCSS, a CSS extension language. My page was awarded the Superior Submission Award out of 9 participants.
+My page utilized the Angular framework which helped to control the tabs that each displayed different information with the use of ngIf. Additionally, I made use of SCSS, a CSS extension language. My page was awarded the Superior Submission Award out of 9 participants.
 
 The page can be viewed here: [The Internship by Samantha Tang](https://stang10.github.io/theinternship/)
